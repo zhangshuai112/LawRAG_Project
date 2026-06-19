@@ -1,0 +1,11 @@
+config.ini
+logs/
+**/__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.env.*
+
+# 训练 checkpoint（单文件超过 GitHub 100MB 限制）
+rag_qa/core/bert_results/
+rag_qa/models/bert_query_classifier/model.safetensors

@@ -1,0 +1,52 @@
+# MySQL 配置
+[mysql]
+host = localhost
+user = root
+password = 123456
+database = subjects_kg
+
+# Redis 配置
+[redis]
+host = localhost
+port = 6379
+password = 1234
+db = 0
+
+# Milvus 配置
+[milvus]
+host = localhost
+port = 19530
+# 记得创建这个表
+database_name = law_rag
+collection_name = lawrag_final
+
+# LLM 配置
+[llm]
+model = qwen3.6-plus
+dashscope_api_key =api_key
+dashscope_base_url = https://dashscope.aliyuncs.com/compatible-mode/v1
+
+# 检索参数配置
+[retrieval]
+parent_chunk_size = 1200
+child_chunk_size = 300
+chunk_overlap = 50
+retrieval_k = 15
+candidate_m = 5
+
+
+# 日志配置
+[logger]
+log_file = logs\app.log
+
+# 应用配置
+[app]
+valid_sources = ["Administrative_regulations", "Constitution", "Judicial_Interpretation", "Law", "Local_regulations", "Supervisory_Law"]
+customer_service_phone = 12345678
+
+# 模型配置（本地模型路径，可按机器环境修改）
+[model]
+embedding_model = D:/nlp_model/bge-m3
+reranker_model = D:/nlp_model/bge-reranker-large
+bert_model = D:/nlp_model/bert-base-chinese
+document_segmentation_model = D:/nlp_model/nlp_bert_document-segmentation_chinese-base
