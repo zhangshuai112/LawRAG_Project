@@ -120,6 +120,6 @@ class OCRDOCLoader(BaseLoader):
 
 if __name__ == '__main__':
     _samples_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'samples')
-    docx_loader = OCRDOCLoader(filepath=os.path.join(_samples_dir, 'ocr_02.docx'))
+    docx_loader = OCRDOCLoader(filepath=os.path.join(_samples_dir, 'ocr_docx.docx'))
     doc = docx_loader.load()
     print(doc)

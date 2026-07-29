@@ -40,6 +40,6 @@ class OCRIMGLoader(BaseLoader):
 
 if __name__ == '__main__':
     _samples_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'samples')
-    img_loader = OCRIMGLoader(img_path=os.path.join(_samples_dir, 'ocr_04.png'))
+    img_loader = OCRIMGLoader(img_path=os.path.join(_samples_dir, 'ocr_img.png'))
     doc = img_loader.load()
     print(doc)

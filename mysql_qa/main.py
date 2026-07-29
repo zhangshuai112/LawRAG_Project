@@ -1,4 +1,4 @@
-from db.mysql_client import Mysql_client
+from database.mysql_client import Mysql_client
 from retrieval.bm25_search import BM25_search
 from cache.redis_client import RedisClient
 from base.logger import logger

@@ -155,4 +155,4 @@ def  process_documents(directory_path, parent_chunk_size=conf.PARENT_CHUNK_SIZE,
     # 返回所有子块列表
     return child_list
 if __name__ == '__main__':
-   print(process_documents(os.path.join(Config().DATA_DIR, 'ai_data')))
+   print(process_documents(os.path.join(Config().DATA_DIR, 'Law_data')))

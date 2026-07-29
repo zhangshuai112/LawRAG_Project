@@ -115,7 +115,7 @@ class OCRPDFLoader(BaseLoader):
 
 if __name__ == '__main__':
     _samples_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'samples')
-    pdf_loader = OCRPDFLoader(file_path=os.path.join(_samples_dir, 'ocr_03.pdf'))
+    pdf_loader = OCRPDFLoader(file_path=os.path.join(_samples_dir, 'ocr_pdf.pdf'))
     doc = pdf_loader.load()
 
     print(type(doc))

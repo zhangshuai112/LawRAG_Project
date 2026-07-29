@@ -171,4 +171,4 @@ if __name__ == '__main__':
     # QueryClassifier().train_model(data_path='../data/law_bert_data.json')
     #
     # QueryClassifier().train_model()
-    print(QueryClassifier().predict('我如果开车创到人，会被怎么处罚？'))
+    print(QueryClassifier().predict('我如果开车撞到人，会被怎么处罚？'))

@@ -102,6 +102,6 @@ class OCRPPTLoader(BaseLoader):
 
 if __name__ == '__main__':
     _samples_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'samples')
-    img_loader = OCRPPTLoader(filepath=os.path.join(_samples_dir, 'ocr_01.pptx'))
+    img_loader = OCRPPTLoader(filepath=os.path.join(_samples_dir, 'ocr_ppt.pptx'))
     doc = img_loader.load()
     print(doc)

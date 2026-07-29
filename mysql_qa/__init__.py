@@ -5,5 +5,5 @@
 # @File    : __init__.py
 # @Software: PyCharm
 from .cache.redis_client import RedisClient
-from .db.mysql_client import Mysql_client
+from .database.mysql_client import Mysql_client
 from .retrieval.bm25_search import BM25_search
